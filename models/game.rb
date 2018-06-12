@@ -16,9 +16,9 @@ class Game
   end
 
   def self.winning_player(result, hand1, hand2)
-    return "draw" if result == nil
-    return "player 1 wins with #{hand1}" if result
-    return "player 2 wins with #{hand2}" if !result
+    return "Draw" if result == nil
+    return "Player 1 wins with #{hand1}" if result
+    return "Player 2 wins with #{hand2}" if !result
   end
 
 end
