@@ -12,13 +12,13 @@ class Game
     else
        result = nil
     end
-    self.winning_player(result)
+    self.winning_player(result, hand1, hand2)
   end
 
-  def self.winning_player(result)
+  def self.winning_player(result, hand1, hand2)
     return "draw" if result == nil
-    return "player 1 wins" if result
-    return "player 2 wins" if !result
+    return "player 1 wins with #{hand1}" if result
+    return "player 2 wins with #{hand2}" if !result
   end
 
 end
